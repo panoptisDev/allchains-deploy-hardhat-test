@@ -394,6 +394,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    metisTestnet: {
+      chainId: 599,
+      url: process.env.METIS_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     filecoinTestnet: {
       chainId: 3141,
       url: process.env.FILECOIN_TESTNET_URL || "",
